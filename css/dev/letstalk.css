@@ -1,0 +1,103 @@
+.letstalk {
+  margin-bottom: 200px;
+  position: relative;
+  padding: 74px 0 79px 0;
+  z-index: 2;
+  color: var(--100-white);
+}
+.letstalk::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+.letstalk__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.letstalk__body {
+  max-width: 580px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.letstalk__body > *:not(:last-child) {
+  margin-bottom: 48px;
+}
+.letstalk__logo {
+  width: 100%;
+}
+.letstalk__logo img {
+  width: 100%;
+  object-fit: cover;
+}
+.letstalk__title:not(:last-child) {
+  margin-bottom: 12px;
+}
+.letstalk__text {
+  max-width: 363px;
+  font-size: 20px;
+  line-height: 130%;
+}
+.letstalk__form {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.letstalk__inputs {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.letstalk__inputs > * {
+  flex: 1 1 auto;
+  width: calc(50% - 10px);
+  min-width: 220px;
+}
+.letstalk__send {
+  margin: 0 auto;
+}
+@media (max-width: 47.99875em) {
+  .letstalk {
+    margin-bottom: 100px;
+    padding: 74px 0 82px 0;
+  }
+  .letstalk__body > *:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .letstalk__text {
+    font-size: 18px;
+  }
+  .letstalk__form {
+    gap: 36px;
+  }
+}
+@media (width <= 29.99875em) {
+  .letstalk__logo {
+    max-width: 145px;
+  }
+}
+@media (width > 29.99875em) and (width <= 112.5em) {
+  .letstalk__logo {
+    max-width: clamp( 145px , 115.183512371px  +  6.2120270905vw , 227px );
+  }
+}
+@media (width > 112.5em) {
+  .letstalk__logo {
+    max-width: 227px;
+  }
+}

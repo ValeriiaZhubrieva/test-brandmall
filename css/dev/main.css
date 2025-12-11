@@ -1,0 +1,32 @@
+.quantity {
+  width: 75px;
+  height: 31px;
+  display: flex;
+  border: 1px solid var(--80-grey);
+}
+.quantity__button {
+  flex: 0 0 24px;
+  position: relative;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  color: var(--100-black-80);
+  transition: color 0.3s, background 0.3s;
+}
+.quantity__input {
+  flex: 1 1 auto;
+}
+.quantity__input input {
+  height: 100%;
+  color: var(--100-black-80);
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+}
+@media (any-hover: hover) {
+  .quantity__button:hover {
+    color: var(--100-black);
+    background-color: var(--30-grey);
+  }
+}
