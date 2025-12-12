@@ -15,6 +15,9 @@
   height: 100%;
   background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
+.letstalk--mb-o {
+  margin-bottom: 0;
+}
 .letstalk__bg {
   position: absolute;
   top: 0;
@@ -75,6 +78,9 @@
   .letstalk {
     margin-bottom: 100px;
     padding: 74px 0 82px 0;
+  }
+  .letstalk--mb-o {
+    margin-bottom: 0;
   }
   .letstalk__body > *:not(:last-child) {
     margin-bottom: 24px;

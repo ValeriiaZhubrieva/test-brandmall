@@ -449,6 +449,7 @@
   }
   .catalog__nav {
     margin-left: 0;
+    justify-content: center;
   }
   .catalog__nav-link {
     min-height: 54px;

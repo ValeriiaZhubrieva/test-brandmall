@@ -24,6 +24,7 @@
 }
 .header__left > *:not(:last-child)::after {
   content: "";
+  pointer-events: none;
   position: absolute;
   top: 50%;
   left: calc(100% + 36px);
@@ -78,6 +79,7 @@
 }
 .header__right > *:not(:first-child)::after {
   content: "";
+  pointer-events: none;
   position: absolute;
   top: 50%;
   right: calc(100% + 36px);
@@ -96,6 +98,7 @@
 }
 .header__actions > *:not(:last-child)::after {
   content: "";
+  pointer-events: none;
   position: absolute;
   top: 50%;
   left: calc(100% + 36px);
