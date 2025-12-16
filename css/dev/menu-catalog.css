@@ -325,7 +325,7 @@
     opacity: 1;
   }
 }
-@media (max-height: 31.24875em) {
+@media (max-height: 31.24875em) and (min-width: 61.99875em) {
   .menu-catalog__container {
     padding-top: 20px;
     padding-bottom: 20px;
