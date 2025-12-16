@@ -9,25 +9,26 @@
 		<link rel="preload" href="./assets/fonts/ProximaNova-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Brands</title>
-		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1765534906930"></script>
-		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1765534906930">
-		<script type="module" crossorigin="" src="./js/app.min.js?v=1765534906930"></script>
-		<script type="module" crossorigin="" src="./js/main.min.js?v=1765534906930"></script>
-		<script type="module" crossorigin="" src="./js/popup.min.js?v=1765534906930"></script>
-		<script type="module" crossorigin="" src="./js/dynamic.min.js?v=1765534906930"></script>
-		<script type="module" crossorigin="" src="./js/mask.min.js?v=1765534906930"></script>
-		<script type="module" crossorigin="" src="./js/header.min.js?v=1765534906930"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1765534906930">
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1765534906930">
-		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1765534906930">
-		<link rel="stylesheet" crossorigin="" href="./css/brands-block.min.css?v=1765534906930">
-		<link rel="stylesheet" crossorigin="" href="./css/header.min.css?v=1765534906930">
-		<link rel="stylesheet" crossorigin="" href="./css/menu.min.css?v=1765534906930">
-		<link rel="stylesheet" crossorigin="" href="./css/menu-catalog.min.css?v=1765534906930">
-		<link rel="stylesheet" crossorigin="" href="./css/search-block.min.css?v=1765534906930">
-		<link rel="stylesheet" crossorigin="" href="./css/cart.min.css?v=1765534906930">
-		<link rel="stylesheet" crossorigin="" href="./css/letstalk.min.css?v=1765534906930">
-		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1765534906930">
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1765893153799"></script>
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1765893153799">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1765893153799"></script>
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1765893153799"></script>
+		<script type="module" crossorigin="" src="./js/popup.min.js?v=1765893153799"></script>
+		<script type="module" crossorigin="" src="./js/dynamic.min.js?v=1765893153799"></script>
+		<script type="module" crossorigin="" src="./js/scrollto.min.js?v=1765893153799"></script>
+		<script type="module" crossorigin="" src="./js/header.min.js?v=1765893153799"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/header.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/textpage.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/menu.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/menu-catalog.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/search-block.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/cart.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/brands-block.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/letstalk.min.css?v=1765893153799">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1765893153799">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -1192,7 +1193,7 @@
 									<div class="cart-block__products">
 										<div class="cart-product">
 											<a href="#" class="cart-product__img">
-												<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+												<img alt="Image" loading="lazy" src="./assets/img/products/image-3.webp">
 											</a>
 											<div class="cart-product__inner">
 												<div class="cart-product__head">
@@ -1224,7 +1225,7 @@
 										</div>
 										<div class="cart-product">
 											<a href="#" class="cart-product__img">
-												<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+												<img alt="Image" loading="lazy" src="./assets/img/products/image-4.webp">
 											</a>
 											<div class="cart-product__inner">
 												<div class="cart-product__head">
@@ -1257,7 +1258,7 @@
 										</div>
 										<div class="cart-product">
 											<a href="#" class="cart-product__img">
-												<img alt="Image" loading="lazy" src="./assets/img/products/image-1.webp">
+												<img alt="Image" loading="lazy" src="./assets/img/products/image-5.webp">
 											</a>
 											<div class="cart-product__inner">
 												<div class="cart-product__head">
@@ -1341,7 +1342,242 @@
 				<section class="brands-block">
 					<div class="brands-block__container">
 						<h1 class="brands-block__title title title--h2">Бренди</h1>
-						<div class="brands-block__head"></div>
+						<div class="brands-block__head">
+							<div class="search-block">
+								<form class="search-block__body">
+									<div class="search-block__field">
+										<input autocomplete="off" type="text" name="search" placeholder="Введіть назву бренду" class="search-block__input">
+									</div>
+									<button type="submit" class="search-block__button button">
+										<span>Знайти</span>
+									</button>
+								</form>
+							</div>
+							<div class="brands-block__sort" data-options-block="">
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#all" class="brands-block__sort-btn is-active">Всі бренди</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#A" class="brands-block__sort-btn">A</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#B" class="brands-block__sort-btn">B</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#C" class="brands-block__sort-btn">C</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#D" class="brands-block__sort-btn">D</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#E" class="brands-block__sort-btn">E</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#F" class="brands-block__sort-btn">F</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#G" class="brands-block__sort-btn">G</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#H" class="brands-block__sort-btn">H</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#I" class="brands-block__sort-btn">I</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#J" class="brands-block__sort-btn">J</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#K" class="brands-block__sort-btn">K</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#L" class="brands-block__sort-btn">L</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#M" class="brands-block__sort-btn">M</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#N" class="brands-block__sort-btn">N</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#O" class="brands-block__sort-btn">O</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#P" class="brands-block__sort-btn">P</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#Q" class="brands-block__sort-btn">Q</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#R" class="brands-block__sort-btn">R</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#S" class="brands-block__sort-btn">S</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#T" class="brands-block__sort-btn">T</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#U" class="brands-block__sort-btn">U</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#V" class="brands-block__sort-btn">V</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#W" class="brands-block__sort-btn">W</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#X" class="brands-block__sort-btn">X</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#Y" class="brands-block__sort-btn">Y</a>
+								<a href="#" data-fls-scrollto-header="" data-fls-scrollto="#Z" class="brands-block__sort-btn">Z</a>
+							</div>
+						</div>
+						<div id="all" class="brands-block__content">
+							<div class="brands-block__block" id="A">
+								<div class="brands-block__letter title title--h4">A</div>
+								<ul class="brands-block__list">
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">Aesop</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">Agolde</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">Alanui</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">Alessandra Rich</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">Avant Toi</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">Agolde</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">Agolde</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ALBERTO BIANI</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ALEXANDER WANG</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ANDREĀDAMO</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">AQUAZZURA</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ATLEIN</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ASICS</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ANN DEMEULEMEESTER</a>
+									</li>
+								</ul>
+							</div>
+							<div class="brands-block__block" id="B">
+								<div class="brands-block__letter title title--h4">B</div>
+								<ul class="brands-block__list">
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">B SIDES</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BALENCIAGA</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BALLY</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BALMAIN</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BAO BAO ISSEY MIYAKE</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BARBOUR</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BARROW</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BBCOUTURE</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BE YOU</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BENEDETTA BRUZZICHES</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BERNADETTE</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BIRKENSTOCK</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BIRKENSTOCK 1774</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">BLANCHA</a>
+									</li>
+								</ul>
+							</div>
+							<div class="brands-block__block" id="C">
+								<div class="brands-block__letter title title--h4">C</div>
+								<ul class="brands-block__list">
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CANADA GOOSE</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CAPASA</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CARHARTT WIP</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CAROLINA HERRERA</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CELLAR DOOR</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CHIARA FERRAGNI BRAND</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CHLOÉ</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CHRISTIAN LOUBOUTIN</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CHURCH'S</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CIRE TRUDON</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CO</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">COMME DES GARÇONS</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">COMME DES GARÇONS</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">CAPASA</a>
+									</li>
+								</ul>
+							</div>
+							<div class="brands-block__block" id="D">
+								<div class="brands-block__letter title title--h4">D</div>
+								<ul class="brands-block__list">
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">DARKPARK</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">DIESEL</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">DENIM X ALEXANDER WANG</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">DSQUARED2</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">DRAGON DIFFUSION</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">DAVID KOMA</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">DI.LA3 PARI'</a>
+									</li>
+								</ul>
+							</div>
+							<div class="brands-block__block" id="E">
+								<div class="brands-block__letter title title--h4">E</div>
+								<ul class="brands-block__list">
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">EÉRA</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ENTIRE STUDIOS</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ERMANNO SCERVINO</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">EXTREME CASHMERE</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ELISABETTA FRANCHI</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ERES</a>
+									</li>
+									<li class="brands-block__item">
+										<a href="#" class="brands-block__link">ETRO</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</section>
 				<section class="letstalk letstalk--mb-o">
@@ -1490,6 +1726,102 @@
 					</div>
 				</div>
 			</footer>
+		</div>
+		<div data-fls-popup="popup" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.5476 19.5476L0.5 0.5M19.5476 0.5L0.5 19.5476" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__title title title--h4">Залишились питання?</div>
+							<div class="popup__text">
+								Залиште ваш номер телефону і наш менеджер
+								<br>
+								зателефонує Вам в робочий час.
+							</div>
+						</div>
+						<form action="#" class="popup__form">
+							<div class="popup__form-inputs">
+								<div class="input-field">
+									<label class="input-field__label">Ім’я*</label>
+									<input autocomplete="off" type="text" name="name" placeholder="Ім’я" class="input-field__input input">
+								</div>
+								<div class="input-field">
+									<label class="input-field__label">Телефон*</label>
+									<input autocomplete="off" type="text" name="tel" placeholder="+38 (XXX) XXX XX XX" class="input-field__input input" data-fls-input-mask="+38 (999) 999-99-99">
+								</div>
+							</div>
+							<button type="submit" class="popup__btn button">
+								<span>Залишити заявку</span>
+								<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 6L5.72877 1.06997e-06L4.65449 1.12291L8.94026 5.22307L1.26573e-06 5.22307L9.94043e-07 6.77693L8.94026 6.77694L4.65449 10.8771L5.72877 12L12 6Z" fill="currentColor"></path>
+								</svg>
+							</button>
+						</form>
+						<button data-fls-popup-link="popup-error" type="button" class="button">Popup Error</button>
+						<button data-fls-popup-link="popup-success" type="button" class="button">Popup Success</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-error" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.5476 19.5476L0.5 0.5M19.5476 0.5L0.5 19.5476" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<figure class="popup__icon">
+								<img src="./assets/img/icons/error-big.svg" alt="Image" loading="lazy">
+							</figure>
+							<div class="popup__title title title--h4">Упс ... Щось пішло не так</div>
+							<div class="popup__text">
+								Здається, сталася помилка. Спробуйте оновити сторінку, можливо, це тимчасово. Якщо проблема
+						залишається, напишіть нам, і ми обов'язково все виправимо.
+							</div>
+						</div>
+						<a href="#" class="popup__btn button">
+							<span>Повернутись на головну</span>
+							<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 6L5.72877 1.06997e-06L4.65449 1.12291L8.94026 5.22307L1.26573e-06 5.22307L9.94043e-07 6.77693L8.94026 6.77694L4.65449 10.8771L5.72877 12L12 6Z" fill="currentColor"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-success" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close">
+						<svg width="21" height="21" viewbox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.5476 19.5476L0.5 0.5M19.5476 0.5L0.5 19.5476" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<figure class="popup__icon">
+								<img src="./assets/img/icons/check-big.svg" alt="Image" loading="lazy">
+							</figure>
+							<div class="popup__title title title--h4">Дякуємо за заявку</div>
+							<div class="popup__text">Ми отримали контакти. Наш менеджер зв'яжеться з Вами у робочий час.</div>
+						</div>
+						<a href="#" class="popup__btn button">
+							<span>Повернутись на головну</span>
+							<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 6L5.72877 1.06997e-06L4.65449 1.12291L8.94026 5.22307L1.26573e-06 5.22307L9.94043e-07 6.77693L8.94026 6.77694L4.65449 10.8771L5.72877 12L12 6Z" fill="currentColor"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

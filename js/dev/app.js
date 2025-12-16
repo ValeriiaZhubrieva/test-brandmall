@@ -131,6 +131,25 @@ if (toggleActiveBtns.length) {
     });
   });
 }
+function addActiveBtnSClass(optionsBlocks, activeClass) {
+  const blocks = document.querySelectorAll(optionsBlocks);
+  if (blocks.length) {
+    blocks.forEach((block) => {
+      const buttons = block.querySelectorAll("button, a");
+      buttons.forEach((item) => {
+        item.addEventListener("click", function(e) {
+          item.classList.add(activeClass);
+          buttons.forEach((otherItem) => {
+            if (otherItem !== this) {
+              otherItem.classList.remove(activeClass);
+            }
+          });
+        });
+      });
+    });
+  }
+}
+addActiveBtnSClass("[data-options-block]", "is-active");
 window.initInputEffects = function() {
   const inputFields = document.querySelectorAll("input, textarea");
   if (!inputFields.length) return;

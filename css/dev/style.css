@@ -676,6 +676,15 @@ body {
 .product-card__fav.is-active path {
   fill: currentColor;
 }
+.product-card__delete {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  transition: background 0.3s;
+}
 .product-card__img {
   display: flex;
   align-items: center;
@@ -1191,6 +1200,14 @@ textarea.input {
     width: 14px;
     height: 12px;
   }
+  .product-card__delete {
+    width: 24px;
+    height: 24px;
+  }
+  .product-card__delete svg {
+    width: 16px;
+    height: 16px;
+  }
   .product-card__sale {
     min-height: 21px;
   }
@@ -1391,6 +1408,9 @@ textarea.input {
     border-color: var(--50-grey);
   }
   .product-card__fav:hover {
+    background-color: var(--30-grey);
+  }
+  .product-card__delete:hover {
     background-color: var(--30-grey);
   }
   .product-card__brand:hover {

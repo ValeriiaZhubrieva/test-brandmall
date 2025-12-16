@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/ProximaNova-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/ProximaNova-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/ProximaNova-Extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/ProximaNova-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Order</title>
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1765893153776"></script>
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1765893153776">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1765893153776"></script>
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1765893153776"></script>
+		<script type="module" crossorigin="" src="./js/dynamic.min.js?v=1765893153776"></script>
+		<script type="module" crossorigin="" src="./js/header.min.js?v=1765893153776"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1765893153776">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1765893153776">
+		<link rel="stylesheet" crossorigin="" href="./css/header.min.css?v=1765893153776">
+		<link rel="stylesheet" crossorigin="" href="./css/textpage.min.css?v=1765893153776">
+		<link rel="stylesheet" crossorigin="" href="./css/radio.min.css?v=1765893153776">
+		<link rel="stylesheet" crossorigin="" href="./css/order.min.css?v=1765893153776">
+		<link rel="stylesheet" crossorigin="" href="./css/cart.min.css?v=1765893153776">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1765893153776">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header-small">
+				<div class="header-small__container">
+					<a href="#" class="header-small__back back-btn">
+						<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M-1.64516e-06 6L6.27122 -3.36558e-07L7.34551 1.12291L3.05974 5.22307L12 5.22306L12 6.77693L3.05974 6.77694L7.34551 10.8771L6.27123 12L-1.64516e-06 6Z" fill="currentColor"></path>
+						</svg>
+					</a>
+					<a href="#" class="header-small__logo">
+						<img src="./assets/img/logo.svg" alt="logo" loading="lazy">
+					</a>
+					<a href="tel:+380689993300" class="header-small__phone">
+						<span class="header-small__phone-icon">
+							<svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M6.12411 0.604232C6.24688 0.727383 6.35396 0.865229 6.44304 1.01478L7.83525 3.3969C8.16981 3.96876 8.26833 4.65248 8.11045 5.30673C7.95256 5.96098 7.55034 6.53574 6.98693 6.9122L6.49566 7.24087C7.45555 9.04821 8.93181 10.5222 10.742 11.4806L11.0811 10.9829C11.4612 10.4244 12.0378 10.0274 12.6922 9.8734C13.3465 9.71939 14.0291 9.82011 14.5995 10.1549L16.9901 11.5595C17.3605 11.7788 17.6518 12.1078 17.8248 12.5023C17.9978 12.8967 18.0441 13.3376 17.9575 13.7655C17.7962 14.4709 17.4923 15.1393 17.0646 15.7291C16.6369 16.3189 16.0945 16.8176 15.471 17.1943C14.8963 17.564 14.2547 17.8139 13.5856 17.9285C12.9166 18.043 12.2345 18.0198 11.5815 17.8602C8.82347 17.125 6.32033 15.6849 4.31546 13.6799C2.31058 11.6749 0.872209 9.17332 0.140199 6.41835C-0.0202531 5.76208 -0.0432584 5.07662 0.0726071 4.40442C0.188473 3.73221 0.440742 3.08756 0.813805 2.51035C1.18701 1.89355 1.68123 1.35674 2.26585 0.933152C2.85048 0.509568 3.51307 0.208226 4.21262 0.0477774C4.55632 -0.0262213 4.911 -0.0141054 5.24468 0.0830346C5.57837 0.180175 5.88059 0.359286 6.12411 0.604232ZM7.23205 10.7412C6.24132 9.75294 5.43835 8.59278 4.86045 7.31459C4.7881 7.1544 4.77612 6.97227 4.82667 6.80106C4.87722 6.62985 4.98697 6.48084 5.13612 6.38091L6.17945 5.68364C6.4222 5.52133 6.59553 5.27366 6.66366 4.99173C6.7318 4.70981 6.68955 4.41515 6.54563 4.16855L5.15619 1.7892C5.0931 1.67754 4.99585 1.58945 4.87829 1.53746C4.76072 1.48547 4.62882 1.47223 4.50136 1.49963C4.00051 1.61625 3.52657 1.83398 3.10901 2.13927C2.69146 2.44456 2.33923 2.83089 2.07425 3.2742C1.81067 3.67582 1.6309 4.12505 1.54597 4.59426C1.46105 5.06347 1.47278 5.54274 1.58044 6.00259C2.24663 8.51171 3.5562 10.7902 5.3818 12.6164C7.2074 14.4426 9.48689 15.7545 11.9986 16.4243C12.4547 16.5307 12.93 16.5423 13.3954 16.4583C13.8607 16.3743 14.3062 16.1965 14.7045 15.9358C15.1503 15.6669 15.5392 15.3119 15.8475 14.8922C16.1559 14.4726 16.3775 13.997 16.4989 13.4941C16.5241 13.3668 16.5095 13.2358 16.4571 13.1191C16.4047 13.0023 16.317 12.9054 16.2061 12.8417L13.8162 11.4391C13.5704 11.2948 13.2762 11.2514 12.9942 11.3178C12.7123 11.3842 12.4639 11.5555 12.3002 11.7963L11.592 12.8437C11.4913 12.9918 11.3419 13.1004 11.1706 13.1499C10.9993 13.1995 10.8174 13.1868 10.6576 13.114C9.38124 12.5316 8.22197 11.7286 7.23205 10.7412Z" fill="currentColor"></path>
+							</svg>
+						</span>
+						<span class="header-small__phone-text">+38 (068) 999 33 00</span>
+					</a>
+				</div>
+			</header>
+			<main class="page">
+				<section class="order">
+					<div class="order__container">
+						<h1 class="order__title title title--h2">Оформлення замовлення</h1>
+						<form action="#" class="order__body">
+							<div class="order__content">
+								<div class="order__block">
+									<div class="order__subtitle title title--h5">Дані одержувача</div>
+									<div class="order__inputs">
+										<div class="input-field">
+											<label class="input-field__label">Ім’я*</label>
+											<input autocomplete="off" type="text" name="name" placeholder="Ім’я" class="input-field__input input is-error">
+											<div class="input-field__error">Помилка</div>
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">Прізвище*</label>
+											<input autocomplete="off" type="text" name="name" placeholder="Прізвище" class="input-field__input input">
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">Телефон*</label>
+											<input autocomplete="off" type="text" name="name" placeholder="+38 (XXX) XXX XX XX" class="input-field__input input" data-fls-input-mask="+38 (999) 999-99-99">
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">Електронна пошта*</label>
+											<input autocomplete="off" type="text" name="name" placeholder="Електронна пошта" class="input-field__input input">
+										</div>
+									</div>
+								</div>
+								<div class="order__block">
+									<div class="order__subtitle title title--h5">Спосіб доставки</div>
+									<div data-fls-radio="" class="options">
+										<label class="options__item">
+											<input class="options__input" checked type="radio" value="1" name="delivery">
+											<span class="options__text">У відділення Нової Пошти</span>
+										</label>
+										<label class="options__item">
+											<input class="options__input" type="radio" value="2" name="delivery">
+											<span class="options__text">Адресна доставка по Україні</span>
+										</label>
+									</div>
+								</div>
+								<div class="order__block">
+									<div class="order__subtitle title title--h5">Адреса</div>
+									<div class="order__rows">
+										<div class="input-field">
+											<label class="input-field__label">Місто*</label>
+											<input autocomplete="off" type="text" name="name" placeholder="Виберіть місто" class="input-field__input input">
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">Видділення №*</label>
+											<input autocomplete="off" type="text" name="name" placeholder="Виберіть відділення" class="input-field__input input">
+										</div>
+									</div>
+								</div>
+								<div class="order__block">
+									<div class="order__subtitle title title--h5">Спосіб оплати</div>
+									<div data-fls-radio="" class="options">
+										<label class="options__item">
+											<input class="options__input" checked type="radio" value="1" name="payment">
+											<span class="options__text">Оплата при отриманні</span>
+										</label>
+										<label class="options__item">
+											<input class="options__input" type="radio" value="2" name="payment">
+											<span class="options__text">Безготівковий розрахунок</span>
+										</label>
+										<label class="options__item">
+											<input class="options__input" type="radio" value="2" name="payment">
+											<span class="options__text">Онлайн оплата (liqpay)</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="cart-block">
+								<div class="cart-block__head">
+									<div class="cart-block__title title title--h5">Ваше замовлення</div>
+								</div>
+								<div class="cart-block__body">
+									<div class="cart-block__products">
+										<div class="cart-product">
+											<a href="#" class="cart-product__img">
+												<img alt="Image" loading="lazy" src="./assets/img/products/image-3.webp">
+											</a>
+											<div class="cart-product__inner">
+												<div class="cart-product__head">
+													<a href="#" class="cart-product__brand">Dries van noten</a>
+													<button type="button" class="cart-product__delete">
+														<svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.9286 11.9286L0.5 0.5M11.9286 0.5L0.5 11.9286" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg>
+													</button>
+												</div>
+												<div class="cart-product__body">
+													<a href="#" class="cart-product__title">Чоловічий блейзер “BEFYA” з хутровою підкладкою “BEFYA”</a>
+													<div class="cart-product__prices">
+														<div class="cart-product__price">243 845 ₴</div>
+													</div>
+												</div>
+												<div class="cart-product__bottom">
+													<div class="cart-product__info">Колір: зелений</div>
+													<div class="cart-product__info">Розмір: S</div>
+													<div data-fls-quantity="" class="quantity">
+														<button data-fls-quantity-minus="" type="button" class="quantity__button">-</button>
+														<div class="quantity__input">
+															<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="1">
+														</div>
+														<button data-fls-quantity-plus="" type="button" class="quantity__button">+</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cart-product">
+											<a href="#" class="cart-product__img">
+												<img alt="Image" loading="lazy" src="./assets/img/products/image-4.webp">
+											</a>
+											<div class="cart-product__inner">
+												<div class="cart-product__head">
+													<a href="#" class="cart-product__brand">Dries van noten</a>
+													<button type="button" class="cart-product__delete">
+														<svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.9286 11.9286L0.5 0.5M11.9286 0.5L0.5 11.9286" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg>
+													</button>
+												</div>
+												<div class="cart-product__body">
+													<a href="#" class="cart-product__title">Чоловічий блейзер “BEFYA” з хутровою підкладкою “BEFYA”</a>
+													<div class="cart-product__prices">
+														<div class="cart-product__oldprice">263 845 ₴</div>
+														<div class="cart-product__price">243 845 ₴</div>
+													</div>
+												</div>
+												<div class="cart-product__bottom">
+													<div class="cart-product__info">Колір: зелений</div>
+													<div class="cart-product__info">Розмір: S</div>
+													<div data-fls-quantity="" class="quantity">
+														<button data-fls-quantity-minus="" type="button" class="quantity__button">-</button>
+														<div class="quantity__input">
+															<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="1">
+														</div>
+														<button data-fls-quantity-plus="" type="button" class="quantity__button">+</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cart-product">
+											<a href="#" class="cart-product__img">
+												<img alt="Image" loading="lazy" src="./assets/img/products/image-5.webp">
+											</a>
+											<div class="cart-product__inner">
+												<div class="cart-product__head">
+													<a href="#" class="cart-product__brand">Dries van noten</a>
+													<button type="button" class="cart-product__delete">
+														<svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M11.9286 11.9286L0.5 0.5M11.9286 0.5L0.5 11.9286" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+														</svg>
+													</button>
+												</div>
+												<div class="cart-product__body">
+													<a href="#" class="cart-product__title">Чоловічий блейзер “BEFYA” з хутровою підкладкою “BEFYA”</a>
+													<div class="cart-product__prices">
+														<div class="cart-product__oldprice">263 845 ₴</div>
+														<div class="cart-product__price">243 845 ₴</div>
+													</div>
+												</div>
+												<div class="cart-product__bottom">
+													<div class="cart-product__info">Колір: зелений</div>
+													<div class="cart-product__info">Розмір: S</div>
+													<div data-fls-quantity="" class="quantity">
+														<button data-fls-quantity-minus="" type="button" class="quantity__button">-</button>
+														<div class="quantity__input">
+															<input data-fls-quantity-value="" autocomplete="off" type="text" name="quantity" value="1">
+														</div>
+														<button data-fls-quantity-plus="" type="button" class="quantity__button">+</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cart-block__bottom" data-fls-dynamic=".order__content, 767.98">
+									<div class="cart-block__title title title--h5">Підсумок замовлення</div>
+									<div class="cart-block__rows">
+										<div class="cart-block__row">
+											<div class="cart-block__label">Товар(ів) 2 шт.:</div>
+											<div class="cart-block__value">487 690 ₴</div>
+										</div>
+									</div>
+									<div class="cart-block__rows">
+										<div class="cart-block__row">
+											<div class="cart-block__label">Дотавка:</div>
+											<div class="cart-block__value">За тарифами "НоваПошта"</div>
+										</div>
+									</div>
+									<div class="cart-block__total">
+										<div class="cart-block__label">Разом:</div>
+										<div class="cart-block__value">487 690 ₴</div>
+									</div>
+									<button type="submit" class="cart-block__btn button">Оформити замовлення</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+			<footer class="footer-small">
+				<div class="footer-small__container">© Всі права захищені “Brandmall” 2025</div>
+			</footer>
+		</div>
+	</body>
+</html>

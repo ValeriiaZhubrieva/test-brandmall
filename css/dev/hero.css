@@ -104,3 +104,11 @@
     display: block;
   }
 }
+@media (max-width: 23.12375em) {
+  .hero__img {
+    margin: 0 -12px;
+  }
+  .hero__links {
+    margin: 0 -12px;
+  }
+}
