@@ -30,6 +30,11 @@
 .contacts__item-title:not(:last-child) {
   margin-bottom: 8px;
 }
+.contacts__item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .contacts__item-list:not(:last-child) {
   margin-bottom: 5px;
 }
