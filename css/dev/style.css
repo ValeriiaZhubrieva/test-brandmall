@@ -545,7 +545,9 @@ body {
   flex: 1 1 auto;
   font-weight: 400;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.05625em;
+  max-height: calc(1.05625em * 2);
+  min-height: calc(1.05625em * 2);
   text-transform: uppercase;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1081,7 +1083,7 @@ textarea.input {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 20;
+  z-index: 700;
   width: 100%;
   transition: bottom 0.6s;
 }

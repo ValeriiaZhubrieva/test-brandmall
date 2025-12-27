@@ -54,6 +54,17 @@
 .text-section__body img {
   margin-right: 20px;
 }
+.text-section__body table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.text-section__body table tr {
+  border: 1px solid var(--50-grey);
+}
+.text-section__body table td {
+  border: 1px solid var(--50-grey);
+  padding: 8px 16px;
+}
 @media (max-width: 47.99875em) {
   .text-section {
     margin-bottom: 100px;

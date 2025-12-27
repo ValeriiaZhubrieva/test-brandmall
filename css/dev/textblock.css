@@ -105,6 +105,17 @@
   font-weight: 600;
   text-decoration: underline;
 }
+.textblock__inner table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.textblock__inner table tr {
+  border: 1px solid var(--50-grey);
+}
+.textblock__inner table td {
+  border: 1px solid var(--50-grey);
+  padding: 8px 16px;
+}
 .textblock__tags {
   display: flex;
   align-items: center;

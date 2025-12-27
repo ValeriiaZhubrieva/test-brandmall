@@ -30,7 +30,7 @@ function toggleLockSliderClass(swiper) {
     myBlock.classList.remove("swiper-block-lock");
   }
 }
-function initSliders() {
+window.initSliders = function() {
   if (document.querySelector(".specialproposal__slider")) {
     document.querySelectorAll(".specialproposal__slider").forEach((el) => {
       const parentSlider = el.parentElement;
@@ -252,5 +252,5 @@ function initSliders() {
       });
     });
   }
-}
-document.querySelector("[data-fls-slider]") ? window.addEventListener("load", initSliders) : null;
+};
+document.querySelector("[data-fls-slider]") ? window.addEventListener("load", window.initSliders) : null;

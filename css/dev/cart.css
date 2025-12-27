@@ -11,7 +11,7 @@
 .cart.is-open .cart-block {
   transform: translate(0px, 0px);
 }
-.cart__container {
+.cart__wrapper {
   flex: 1 1 auto;
   width: 100%;
   height: 100%;
@@ -20,17 +20,7 @@
   pointer-events: none;
   position: relative;
 }
-.cart__container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: calc(100% - 20px);
-  background-color: var(--100-white);
-  width: 100vw;
-  height: 100%;
-  pointer-events: all;
-}
-.cart__container > * {
+.cart__wrapper > * {
   pointer-events: all;
 }
 
@@ -260,9 +250,6 @@
     position: fixed;
     top: 0;
     background-color: var(--100-white);
-    padding: 0;
-  }
-  .cart__container {
     padding: 0;
   }
   .order .cart-block {

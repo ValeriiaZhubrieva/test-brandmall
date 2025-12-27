@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   background-color: var(--100-white);
-  z-index: 50;
+  z-index: 999;
 }
 .header__top {
   padding: 20px 0;
@@ -301,7 +301,7 @@
     font-weight: 400;
     border-bottom: 1px solid var(--50-grey);
   }
-  .header__catalog-link::after {
+  .header__catalog-link[data-menu]::after {
     content: "";
     width: 14px;
     height: 14px;
@@ -381,7 +381,7 @@
   .header__nav-link::before {
     display: none;
   }
-  .header__nav-link::after {
+  .header__nav-link[data-menu]::after {
     content: "";
     width: 14px;
     height: 14px;
